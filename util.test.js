@@ -24,9 +24,9 @@ test('should generate a valid text output', () => {
 //E2E testing
 test('should create an element with text and correct', async () => {
   const browser = await puppeteer.launch({
-    headless: false,
-    slowMo: 80,
-    args: ['--window-size=1920,1080']
+    headless: true
+    // slowMo: 80,
+    // args: ['--window-size=1920,1080']
   });
   const page = await browser.newPage();
   await page.goto(
